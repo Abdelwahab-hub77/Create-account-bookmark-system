@@ -38,7 +38,7 @@ function addUser(event) {
     const isEmailValid = validationEmail(emailInput);
     const isPasswordValid = validationPassword(passwordInput);
     const isConfirmPasswordValid = validationConfirmPassword(confirmPasswordInput);
-    const isEmailUnique = isEmailUnique(emailInput);
+    const  isEmailUnique = searchEmailUniqueness(emailInput);
     // If all validations pass, add the user
     /*
     if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid && isEmailUnique) 
