@@ -1,16 +1,16 @@
 @font-face {
     font-family: book;
-    src: url(/webfonts/Pacifico-Regular.ttf);
+    src: url(../webfonts/Pacifico-Regular.ttf);
 }
 
 @font-face {
     font-family: twst;
-    src: url(/webfonts/Righteous-Regular.ttf);
+    src: url(../webfonts/Righteous-Regular.ttf);
 }
 
 @font-face {
     font-family: bodyFont;
-    src: url(/webfonts/PTSansCaption-Bold.ttf);
+    src: url(../webfonts/PTSansCaption-Bold.ttf);
 }
 
 .font {
@@ -23,7 +23,7 @@
 
 body {
     /* background-color: bisque; */
-    background-image: url(/img/Bg\ 2.png);
+    background-image: url('../img/Bg2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,7 +36,7 @@ h1 {
     font-size: 60px;
     font-weight: 500;
     font-family: book;
-    background: url('https://t4.ftcdn.net/jpg/12/32/72/21/360_F_1232722195_lEcGYe0U1f0xzgPso0VpDNt0OBuJFAY7.jpg');
+    background: url('../img/Bg1.png');
     background-size: cover;
     /* background-position: center center; */
     background-clip: text;

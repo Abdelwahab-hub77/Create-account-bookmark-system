@@ -34,6 +34,11 @@ Loginbutton.addEventListener('click', goToLoginForm);
 function addUser(event) {
     event.preventDefault(); // Prevent default form submission behavior
 
+    const isNameValid = validationName(nameInput);
+    const isEmailValid = validationEmail(emailInput);
+    const isPasswordValid = validationPassword(passwordInput);
+    const isConfirmPasswordValid = validationConfirmPassword(confirmPasswordInput);
+    const isEmailUnique = isEmailUnique(emailInput);
     // If all validations pass, add the user
     /*
     if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid && isEmailUnique) 

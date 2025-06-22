@@ -1,30 +1,31 @@
-body {
-    background-color: #f8f9fa; /* Light grey background for the whole page */
-    min-height: 100vh; /* Ensure body takes full viewport height */
-    display: flex; /* Use flexbox for centering content within body */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
 
-    /* Ensure the path to your image is correct relative to the CSS file or HTML file */
-    background-image: url('../img/Bg 2.png'); /* Assuming 'img' is a sibling to 'Css' folder */
+body {
+    /* background-color: #f8f9fa;  */
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+    
+    background-image: url('../img/Bg2.png'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .login-container {
-    background-color: #ffffff; /* White background for the form */
-    padding: 40px; /* More padding inside the form */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    width: 100%; /* Take full width of its column */
-    max-width: 500px; /* Max width for the form container */
+    background-color: #ffffff; 
+    padding: 40px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 500px; 
 }
 
 @font-face {
     font-family: book;
-    /* Ensure the path to your font file is correct relative to the CSS file */
-    src: url('../webfonts/Pacifico-Regular.ttf'); /* Assuming 'webfonts' is a sibling to 'Css' folder */
+   
+    src: url('../webfonts/Pacifico-Regular.ttf'); 
 }
 
 .font {
@@ -33,7 +34,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #0d6efd; /* Set a consistent color for links */
+    color: #0d6efd;
 }
 
 a:hover {
