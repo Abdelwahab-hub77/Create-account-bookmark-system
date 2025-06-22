@@ -37,12 +37,9 @@ function addSite()
     const isCategoryValid = validateNameOrCategory.call(siteCategoryInput);
     const isUrlValid = validateUrl.call(siteURLInput);
     
-    /*
+    
     if (isNameValid && isCategoryValid && isUrlValid) 
-    you can use this line if you want to check  fields before proceeding insteid of checking them in the isFormValid() funccation
-    */
-
-    if (isFormValid()) {
+     {
         // All inputs are valid, proceed to add the site
         let siteData = {
             siteName: siteNameInput.value.trim(),
@@ -77,14 +74,6 @@ function addSite()
 
 // ================== function to check form validation ==================
 
-// Checks if all form fields are valid before proceeding to add a site.
-
-function isFormValid() {
-    const isNameValid = siteNameInput.classList.contains('is-valid');
-    const isCategoryValid = siteCategoryInput.classList.contains('is-valid'); 
-    const isUrlValid = siteURLInput.classList.contains('is-valid');
-    return isNameValid && isCategoryValid && isUrlValid;
-}
 
 // ================== function clearForm() ===================
 

@@ -30,11 +30,10 @@ function login(event) {
     event.preventDefault(); // Prevent default form submission behavior
 
     // If initial format validations pass, proceed to check credentials
-    /* if (validationEmail() && validationPassword())
-     you can use this line if you want to check  fields before proceeding insteid of checking them in the isFormValid() funccation
-    */
+   const isEmailValid = validationEmail();
+   const isPasswordValid = validationPassword();
 
-    if (isFormValid()) {
+    if ( isEmailValid && isPasswordValid) {
         let email = emailInput.value.trim();
         let password = passwordInput.value.trim();
 
@@ -136,17 +135,6 @@ function validationPassword() {
         passwordError.textContent = "Password must be at least 8 characters, include a capital letter, a lowercase letter, a number, and a special character.";
         return false;
     }
-}
-
-// ============================  isFormValid() ==================
-// Checks if both email and password input fields contain valid, legal form values..
-
-function isFormValid() {
-    // This function primarily checks the visual state for immediate feedback.
-    // The main 'handleLoginAttempt' function will do the actual credential check.
-    const isEmailValid = emailInput.classList.contains('is-valid');
-    const isPasswordValid = passwordInput.classList.contains('is-valid');
-    return isEmailValid && isPasswordValid;
 }
 
 // ============================  getData() ==================

@@ -40,12 +40,9 @@ function addUser(event) {
     const isConfirmPasswordValid = validationConfirmPassword(confirmPasswordInput);
     const  isEmailUnique = searchEmailUniqueness(emailInput);
     // If all validations pass, add the user
-    /*
+   
     if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid && isEmailUnique) 
-    you can use this line if you want to check  fields before proceeding insteid of checking them in the isFormValid() funccation
-    */
-
-    if (isFormValid()) {
+     {
         let userData = {
             name: nameInput.value.trim(),
             email: emailInput.value.trim(),
@@ -64,15 +61,7 @@ function addUser(event) {
 //==============================================
 // funcation to Checks if the entire form is valid based on 'is-valid' classes and email uniqueness.
 
-function isFormValid() {
-    const isNameValid = nameInput.classList.contains('is-valid');
-    const isEmailValid = emailInput.classList.contains('is-valid');
-    const isPasswordValid = passwordInput.classList.contains('is-valid');
-    const isConfirmPasswordValid = confirmPasswordInput.classList.contains('is-valid');
-    const isEmailUnique = searchEmailUniqueness();
 
-    return isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid && isEmailUnique;
-}
 
 // ---====================== Validation Functions ===============================---
 
