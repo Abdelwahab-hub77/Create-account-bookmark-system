@@ -1,0 +1,68 @@
+body {
+    background-color: #f8f9fa; /* Light grey background for the whole page */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex; /* Use flexbox for centering content within body */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    /* Ensure the path to your image is correct relative to the CSS file or HTML file */
+    background-image: url('../img/Bg 2.png'); /* Assuming 'img' is a sibling to 'Css' folder */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 40px; /* More padding inside the form */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%; /* Take full width of its column */
+    max-width: 500px; /* Max width for the form container */
+}
+
+@font-face {
+    font-family: book;
+    /* Ensure the path to your font file is correct relative to the CSS file */
+    src: url('../webfonts/Pacifico-Regular.ttf'); /* Assuming 'webfonts' is a sibling to 'Css' folder */
+}
+
+.font {
+    font-family: book;
+}
+
+a {
+    text-decoration: none;
+    color: #0d6efd; /* Set a consistent color for links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*   
+ * Styles for the form elements
+*/
+.is-valid {
+    border-color: green;
+}
+
+.is-invalid {
+    border-color: red;
+}
+
+.show_error {
+    color: red;
+    display: block; 
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.hide_error {
+    display: none;
+}
+.divider {
+    height: 3px;
+    background: linear-gradient(to right, transparent, #0D6EFD, transparent);
+}
+

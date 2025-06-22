@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <!-- ===== description ===== -->
+    <meta name="description" content="Manage your favorite website bookmarks">
+    <!-- ===== icon ===== -->
+    <link rel="shortcut icon" href="/img/Bookmarkicon.png" type="image/x-icon">
+    <!-- ===== Font Awesome Icon Library ===== -->
+    <link rel="stylesheet" href="/Css/all.min.css">
+    <!-- ===== bootstrap ===== -->
+    <link rel="stylesheet" href="/Css/bootstrap.min.css">
+    <!-- ===== Style sheet ===== -->
+    <link rel="stylesheet" href="/Css/style.css">
+
+</head>
+
+<body>
+
+    <!--=============================== header ===============================-->
+
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid ">
+                <button class="btn btn-outline-danger fw-semibold  ms-auto" type="submit" id="logoutBtn">Log out</button>
+            </div>
+        </nav>
+   </header>
+   
+    <main>
+
+        <section>
+        <div class="container">
+
+            <div class="text-center pt-5">
+                <h1 class="pt-3 ">
+                    Bookmarker
+                </h1>
+                <div class="divider"></div>
+
+                <h2 class="pb-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                        class="fa-solid fa-bookmark"></i></h2>
+
+            </div>
+        </div>
+        </section>
+        <!-- =============================== form section  ===============================-->
+
+        <section>
+            <div class="container ">
+                <div class="row ">
+
+                    <!-- ===  input site name === -->
+                    <div class="col-12 py-3">
+                        <div class="inner">
+                            <label for="SiteName" class="pb-2 font"><i
+                                    class="fa-solid fa-book-bookmark pe-2 text-primary"></i>
+                                Site
+                                Name</label>
+                            <div>
+                                <input type="text" class="form-control " id="SiteName" placeholder="Enter Site Name"
+                                    title="Site Name must be at least  4 characters from [a-z or A-Z or 0-9 or _ - ]"autocomplete="off">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ===  input site url === -->
+                    <div class="col-12 ">
+                        <div class="inner">
+                            <label for="SiteURL" class="pb-2 font"><i class="fa-solid fa-link pe-2 text-primary"></i>
+                                Site
+                                URL</label>
+                            <div>
+                                <input type="text" class="form-control" id="SiteURL" placeholder="Enter Site URL"
+                                    title="Enter valid Site URL"autocomplete="off">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- ===  input site Catogry === -->
+                    <div class="col-12 py-3">
+                        <div class="inner">
+                            <label for="SiteCatogry" class="pb-2 font"><i
+                                    class="fa-solid fa-list pe-2 text-primary"></i> Site
+                                Catogry</label>
+                            <input type="text" list="list" class="form-control" id="SiteCatogry"
+                                placeholder="Enter Site Catogry"
+                                title="Site Catogry must be at least  4 characters from [a-z or A-Z or 0-9 or _ - ]"autocomplete="off">
+                            <datalist id="list">
+                                <option value=" Business Websites"></option>
+                                <option value="E-commerce Websites"></option>
+                                <option value="News and Magazine Websites"></option>
+                                <option value="Social Media Websites"></option>
+                                <option value="Educational Websites"></option>
+                                <option value=" Entertainment Websites"></option>
+                                <option value="Government Websites"></option>
+                                <option value=" Blogs"></option>
+
+
+                            </datalist>
+                        </div>
+
+                    </div>
+
+                    <!-- ===  Submit button === -->
+                    <div class=" text-center ">
+                        <button class="btn btn-danger py-2 px-5 mt-4 text-center" id="submitBtn"> Submit</button>
+                        <div class="divider"></div>
+
+                        <!-- <p class="dotted_border mt-4"> </p> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =============================== table section ===============================-->
+
+        <section>
+            <div class="container pt-3 ">
+                <div class="row text-center mb-5">
+
+                    <h3 class=" mb-4 text-center text-dark">
+                        <i class="fa-solid fa-bookmark me-2 text-primary"></i> Your Saved Bookmarks <i
+                            class="fa-solid fa-bookmark me-2 text-primary"></i>
+                    </h3>
+
+                    <table class=" table-bordered tableStyel table-hover">
+
+                        <thead class="bg-primary text-white py-5">
+                            <th class="py-2" scope="col">Index</th>
+                            <th scope="col">Website Name</th>
+                            <th scope="col">Site Catogry</th>
+                            <th scope="col">Visit</th>
+                            <th scope="col">Delete</th>
+
+                        </thead>
+
+                        <tbody id="tbody">
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================== modal-dialog section  ===========================-->
+
+        <section>
+            <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-danger border-2">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold text-danger" id="errorModalLabel">Validation Error</h5>
+                            <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-5" id="errorModalBody">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/Bookmarker.js"></script>
+
+
+</body>
+
+</html>

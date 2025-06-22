@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!--  ===== description ===== -->
+  <meta name="description" content="Log in to your account.">
+      <!-- ===== icon ===== -->
+    <link rel="shortcut icon" href="/img/Bookmarkicon.png" type="image/x-icon">
+    <!-- ===== Font Awesome Icon Library ===== -->
+    <link rel="stylesheet" href="/Css/all.min.css">
+    <!-- ===== bootstrap ===== -->
+    <link rel="stylesheet" href="/Css/bootstrap.min.css">
+    <!-- ===== Style sheet ===== -->
+   <link rel="stylesheet" href="./Css/form.css">
+
+
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="login-container">
+            <div class="row">
+                <h1 class="text-center mb-4 font">Login Form</h1>
+                <div class="divider mb-4"></div>
+                <!-- ===============================email========================= -->
+
+                <div class="col-12 mb-2">
+                    <label for="emailInput" class="form-label">Email or Phone</label>
+                    <input type="text" class="form-control py-2 " id="emailInput" placeholder="Enter email or phone number"
+                        title="Enter email or phone number from [a-z or A-Z or 0-9 or _-]">
+                    <div id="errorEmail">
+
+                        <!-- error massage -->
+                    </div>
+                     
+                </div>
+                <!-- ===============================password========================= -->
+
+                <div class="col-12 mb-4">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control py-2" id="passwordInput" placeholder="Enter password"
+                        title="Enter your password" autocomplete="off">
+                    
+                    <div id="errorPassward">
+
+                        <!-- error massage -->
+
+                    </div>
+
+                </div>
+                <!-- ===============================Login button========================= -->
+
+                <div class="col-12">
+                    <button class="btn btn-primary w-100 py-2 fs-5" id="Loginbutton">Login</button>
+                    <a href="" class=" d-block mt-2 fw-semibold" id="forgotPassword">forgit passward ?</a>
+                </div>
+                <!-- ===============================Sign Up Now========================= -->
+
+                <div>
+                    <p class="pt-3 text-center"><span>Not a Member ? </span> <a href="" class=" fw-semibold" id="signUp">Sign Up Now</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/index.js"></script>
+
+</body>
+</html>
